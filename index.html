@@ -207,9 +207,9 @@
               const siteData = bacteriaData[siteName];
 
               if (siteData) {
-                const ec = siteData.ecoli[0];
-                const co = siteData.coliforms[0];
-                const ie = siteData.enterococci[0];
+                const ec = siteData.ecoli[siteData.length - 1];
+                const co = siteData.coliforms[siteData.length - 1];
+                const ie = siteData.enterococci[siteData.length - 1];
 
                 // E. coli cell
                 row.cells[1].textContent =
