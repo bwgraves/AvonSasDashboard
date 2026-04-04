@@ -190,3 +190,90 @@
     font-style: italic;
   }
   
+.dashboard-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.dashboard-card__header h2 {
+  margin: 0;
+}
+
+.export-button {
+  margin-bottom: 0;
+}
+
+#export-modal {
+  border: none;
+  border-radius: 8px;
+  max-width: 560px;
+  width: 92%;
+  padding: 0;
+}
+
+#export-modal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.export-modal__form {
+  padding: 1.25rem;
+}
+
+.export-modal__form h3 {
+  margin-top: 0;
+}
+
+.export-modal__form select {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.export-modal__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.export-options {
+  border: 0;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.export-option {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  padding: 0.7rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.export-option:has(input:checked) {
+  border-color: var(--color-primary);
+  background-color: #f2fbff;
+}
+
+.export-option input {
+  margin: 0;
+}
+
+.export-location {
+  margin-bottom: 1rem;
+}
+
+.export-location label {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.export-location select {
+  width: 100%;
+}
