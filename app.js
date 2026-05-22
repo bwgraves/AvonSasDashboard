@@ -127,7 +127,8 @@ function setupExportModal() {
     const isSingleLocation = scope === 'single';
     const selectedLocation = exportLocationSelect.value;
 
-    const locations = isSingleLocation ? [selectedLocation] : Object.keys(bacteriaData);
+    const availableLocations = Array.from(exportLocationSelect.options).map(o => o.value);
+    const locations = isSingleLocation ? [selectedLocation] : availableLocations;
     const rows = buildCsvRows(locations);
     const filename = isSingleLocation
       ? `avonvale-bacteria-${selectedLocation.toLowerCase()}-${dateString}.csv`

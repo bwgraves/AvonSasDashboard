@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARAG Bacteria Watch — Archive: Fladbury &amp; Bidford</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link href="style.css?v=7" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div class="container header-items">
+      <h1>Avonvale River Action Group Bacteria Watch 🚣🏻‍♂️</h1>
+      <div class="header-actions">
+        <a class="nav-link" href="index.html">← Back to Dashboard</a>
+        <a class="button primary" href="https://www.gofundme.com/f/avonvale-river-action-group-funding-for-ecoli-testing" target="_blank">Support Our Testing</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="archive-notice">
+      <span class="archive-notice__icon">📁</span>
+      <div class="archive-notice__content">
+        <strong>Historical Archive</strong> — Monthly monitoring at Fladbury and Bidford was discontinued in May 2026. The data below is for reference only and will not be updated. For current weekly readings, visit the <a href="index.html">Eckington dashboard</a>.
+      </div>
+    </div>
+
+    <section>
+      <h2>Fladbury</h2>
+      <p>Sampled just above Fladbury Mill — <em>monitoring discontinued May 2026</em></p>
+      <div class="row">
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>E-Coli</h3>
+            <canvas data-ecoli data-location="Fladbury"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Enterococci</h3>
+            <canvas data-enterocci data-location="Fladbury"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Coliforms</h3>
+            <canvas data-coliforms data-location="Fladbury"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Bidford</h2>
+      <p>Sampled downstream at Marcliff — <em>monitoring discontinued May 2026</em></p>
+      <div class="row">
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>E-Coli</h3>
+            <canvas data-ecoli data-location="Bidford"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Enterococci</h3>
+            <canvas data-enterocci data-location="Bidford"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Coliforms</h3>
+            <canvas data-coliforms data-location="Bidford"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="dashboard-card">
+      <div class="dashboard-card__header">
+        <h2>Export archive data</h2>
+        <a href="javascript:void(0)" data-open-export-modal>Export CSV</a>
+      </div>
+      <p style="margin: 0;">Download historical data for Fladbury and Bidford.</p>
+    </div>
+
+  </div>
+
+  <dialog id="export-modal">
+    <form method="dialog" class="export-modal__form">
+      <h3>Export Results as CSV</h3>
+      <p>Select what you want to export.</p>
+      <fieldset class="export-options" aria-label="Export scope">
+        <label class="export-option">
+          <input type="radio" name="export-scope" value="all" checked>
+          <span>All locations (Fladbury &amp; Bidford)</span>
+        </label>
+        <label class="export-option">
+          <input type="radio" name="export-scope" value="single">
+          <span>Single location</span>
+        </label>
+      </fieldset>
+      <div class="export-location" data-export-location-wrapper hidden>
+        <label for="export-location">Location</label>
+        <select id="export-location">
+          <option value="Fladbury">Fladbury</option>
+          <option value="Bidford">Bidford</option>
+        </select>
+      </div>
+      <div class="export-modal__actions">
+        <button type="button" class="button primary" data-export-confirm>Export CSV</button>
+        <button class="button clear" value="cancel">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <script src="app.js?v=7"></script>
+</body>
+</html>

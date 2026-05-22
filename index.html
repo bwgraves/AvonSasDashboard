@@ -1,197 +1,146 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>ARAG Bacteria Monitoring: Eckington, Flabdury & Bidford</title>
-        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
-        <link href="style.css?v=6" rel="stylesheet" type="text/css" />
-    </head>
-    <body>
-      <header>
-        <div class="container header-items">
-          <h1>Avonvale River Action Group Bacteria Watch 🚣🏻‍♂️</h1>
-          <a class="button primary" href="https://www.gofundme.com/f/avonvale-river-action-group-funding-for-ecoli-testing" target="_blank">Support Our Testing</a>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARAG Bacteria Watch — Eckington</title>
+  <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+  <link href="style.css?v=7" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <header>
+    <div class="container header-items">
+      <h1>Avonvale River Action Group Bacteria Watch 🚣🏻‍♂️</h1>
+      <div class="header-actions">
+        <a class="nav-link" href="archive.html">Archive: Fladbury &amp; Bidford →</a>
+        <a class="button primary" href="https://www.gofundme.com/f/avonvale-river-action-group-funding-for-ecoli-testing" target="_blank">Support Our Testing</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="status-banner status-banner--active">
+      <span class="status-dot"></span>
+      <span><strong>Live monitoring active</strong> — Weekly readings at Eckington Bridge from May 2026. Fladbury and Bidford are no longer sampled; see the <a href="archive.html">archive</a> for their historical data.</span>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="dashboard-card">
+          <h2>About this dashboard</h2>
+          <p>Weekly bacterial monitoring data from <strong>Eckington Bridge</strong> on the River Avon. Charts show E-Coli, Enterococci, and Coliform levels over time, with Environment Agency thresholds marked.</p>
+          <details>
+            <summary>Read more about the data</summary>
+            <p>Bacteria are microscopic organisms found naturally in rivers. <strong>Coliform bacteria</strong>, including <em>E. coli</em>, are used as indicators of contamination from sources such as livestock or sewage. Results are from a professional lab — colonies grown on agar plates are counted to give the <strong>cfu</strong> (colony forming units) value.</p>
+            <p>Environment Agency ratings consider <em>E. coli</em> &lt;500 cfu and Enterococci &lt;200 cfu as excellent. These are historic measurements and should not be used to judge current water safety.</p>
+          </details>
         </div>
-      </header>
-        <div class="container">
-            <div class="row">
-              <div class="col">
-                <div class="dashboard-card">
-                  <h2>About this dashboard</h2>
-                  <p>This dashboard presents bacterial monitoring data from <strong>Eckington</strong>, <strong>Fladbury</strong>, and <strong>Bidford</strong>. The charts display key metrics used to assess potential risks to public health and the environment.</p>
-                  <details>
-                      <summary class="">Read more</summary>
-                      <p>Bacteria are microscopic organisms found naturally in lakes, rivers, and streams. While most are harmless, some can indicate contamination or pose a risk to humans and wildlife. <strong>Coliform bacteria</strong>, including <em>E. coli</em>, are commonly used as indicators of water pollution, especially from animal or human waste. Elevated levels of these bacteria may suggest recent contamination from sources such as livestock, pets, or sewage.</p>
-                      <p>The results are from a professional lab. A standard amount of sample is put on an agar plate (bacterial food) and grown for a set period of time. The number of colonies (dots of bacteria) seen are counted — this is the <strong>cfu</strong> ("colony forming units") count given. Environment Agency ratings consider <em>E. coli</em> &lt; 500 cfu and coliforms &lt; 200 cfu as excellent.</p>
-                      <p>Monitoring these levels helps scientists and public health officials track changes over time and identify areas where further investigation or action may be needed. Given that they are historic measurements, they should not be used as an indication of whether it is safe to (say) swim or not.</p>
-                  </details>
-                </div>
-                <div class="dashboard-card">
-                  <h2>Useful Links</h2>
-                  <ul>
-                    <li><a href="https://www.gofundme.com/f/avonvale-river-action-group-funding-for-ecoli-testing" target="_blank">Donate to help fund testing kits</a></li>
-                    <li><a href="https://avonvaleriver.org" target="_blank">Avonvale River Action Group website</a></li>
-                    <li><a href="https://mycloudbase.com/avonvale" target="_blank">Avonvale River Action Group monthly sampling results</a></li>
-                    <li>
-                      <a href="https://spillalerts.co.uk?ref=bernie" target="_blank">Sign up to Avon sewage spill alerts</a>
-                      <span class="text-warning">
-                        <i>⚠️ Note: This tool checks Severn Trent's public data for reported sewage spills.
-                        It may be incomplete and shouldn't be relied on to judge water safety.</i>
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="col">
-                <div class="dashboard-card">
-                  <div class="dashboard-card__header">
-                    <h2>Latest data - 18th May 2026</h2>
-                    <p><a href="javascript:void(0)" data-open-export-modal>Export CSV</a></p>
-                  </div>
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>Site</th>
-                        <th>E-Coli</th>
-                        <th>Enterococci</th>
-                        <th>Coliforms</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Eckington</td>
-                        <td>-</td>
-                        <td>-</td>
-                        <td>-</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="chart-keys">
-                    <span class="chart-keys__header">Envrionmental Agency Classifcations - <a href="https://datahq.sas.org.uk/wp-content/uploads/2025/01/SAS-Citizen-Science-guidance-on-data-interpretation.pdf" target="_blank">See here for more details</a></span>
-                    <div class="chart-keys__key">
-                      <span class="colour colour--excellent"></span>
-                      <span><strong>Excellent</strong> - E-Coli: ≤500, Enterococci: ≤200 cfu/100ml (95th percentile)</span>
-                    </div>
-                    <div class="chart-keys__key">
-                      <span class="colour colour--good"></span>
-                      <span><strong>Good</strong> - E-Coli: ≤1000, Enterococci: ≤400 cfu/100ml (95th percentile)</span>
-                    </div>
-                    <div class="chart-keys__key">
-                      <span class="colour colour--sufficient"></span>
-                      <span><strong>Sufficient</strong> - E-Coli: ≤900, Enterococci: ≤330 cfu/100ml (90th percentile)</span>
-                    </div>
-                    <div class="chart-keys__key">
-                      <span class="colour colour--poor"></span>
-                      <span><strong>Poor</strong> - Does not meet 'Sufficient' standard</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <dialog id="export-modal">
-              <form method="dialog" class="export-modal__form">
-                <h3>Export Results as CSV</h3>
-                <p>Select what you want to export.</p>
-                <fieldset class="export-options" aria-label="Export scope">
-                  <label class="export-option">
-                    <input type="radio" name="export-scope" value="all" checked>
-                    <span>All locations</span>
-                  </label>
-                  <label class="export-option">
-                    <input type="radio" name="export-scope" value="single">
-                    <span>Single location</span>
-                  </label>
-                </fieldset>
-                <div class="export-location" data-export-location-wrapper hidden>
-                  <label for="export-location">Location</label>
-                  <select id="export-location">
-                    <option value="Eckington">Eckington</option>
-                    <option value="Fladbury">Fladbury</option>
-                    <option value="Bidford">Bidford</option>
-                  </select>
-                </div>
-                <div class="export-modal__actions">
-                  <button type="button" class="button primary" data-export-confirm>Export CSV</button>
-                  <button class="button clear" value="cancel">Close</button>
-                </div>
-              </form>
-            </dialog>
-            <section>
-                <h2>Eckington</h2>
-                <p>Sampled downstream of Eckington Bridge</p>
-                <div class="row">
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>E-Coli</h3>
-                            <canvas data-ecoli data-location="Eckington"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>Enterococci</h3>
-                            <canvas data-enterocci data-location="Eckington"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                      <div class="chart dashboard-card">
-                          <h3>Coliforms</h3>
-                          <canvas data-coliforms data-location="Eckington"></canvas>
-                      </div>
-                  </div>
-                </div>
-            </section>
-            <section>
-                <h2>Fladbury</h2>
-                <p>Sampled just above Fladbury Mill</p>
-                <div class="row">
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>E-Coli</h3>
-                            <canvas data-ecoli data-location="Fladbury"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>Enterococci</h3>
-                            <canvas data-enterocci data-location="Fladbury"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                      <div class="chart dashboard-card">
-                          <h3>Coliforms</h3>
-                          <canvas data-coliforms data-location="Fladbury"></canvas>
-                      </div>
-                  </div>
-                </div>
-            </section>
-            <section>
-                <h2>Bidford</h2>
-                <p>Sampled downstream at Marcliff</p>
-                <div class="row">
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>E-Coli</h3>
-                            <canvas data-ecoli data-location="Bidford"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="chart dashboard-card">
-                            <h3>Enterococci</h3>
-                            <canvas data-enterocci data-location="Bidford"></canvas>
-                        </div>
-                    </div>
-                    <div class="col">
-                      <div class="chart dashboard-card">
-                          <h3>Coliforms</h3>
-                          <canvas data-coliforms data-location="Bidford"></canvas>
-                      </div>
-                  </div>
-                </div>
-            </section>
+        <div class="dashboard-card">
+          <h2>Useful Links</h2>
+          <ul>
+            <li><a href="https://www.gofundme.com/f/avonvale-river-action-group-funding-for-ecoli-testing" target="_blank">Donate to help fund testing kits</a></li>
+            <li><a href="https://avonvaleriver.org" target="_blank">Avonvale River Action Group website</a></li>
+            <li><a href="https://mycloudbase.com/avonvale" target="_blank">Monthly sampling results</a></li>
+            <li>
+              <a href="https://spillalerts.co.uk?ref=bernie" target="_blank">Sign up to Avon sewage spill alerts</a>
+              <span class="text-warning">⚠️ Checks Severn Trent's public data for reported spills — may be incomplete and shouldn't be relied on to judge water safety.</span>
+            </li>
+          </ul>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
-        <script src="app.js?v=april"></script>
-    </body>
+      </div>
+
+      <div class="col">
+        <div class="dashboard-card">
+          <div class="dashboard-card__header">
+            <h2>Latest reading — 18 May 2026</h2>
+            <a href="javascript:void(0)" data-open-export-modal>Export CSV</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Site</th>
+                <th>E-Coli</th>
+                <th>Enterococci</th>
+                <th>Coliforms</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Eckington</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="chart-keys">
+            <span class="chart-keys__header">EA Classifications — <a href="https://datahq.sas.org.uk/wp-content/uploads/2025/01/SAS-Citizen-Science-guidance-on-data-interpretation.pdf" target="_blank">full details</a></span>
+            <div class="chart-keys__key"><span class="colour colour--excellent"></span><span><strong>Excellent</strong> — E-Coli ≤500, Enterococci ≤200 cfu/100ml (95th percentile)</span></div>
+            <div class="chart-keys__key"><span class="colour colour--good"></span><span><strong>Good</strong> — E-Coli ≤1000, Enterococci ≤400 cfu/100ml (95th percentile)</span></div>
+            <div class="chart-keys__key"><span class="colour colour--sufficient"></span><span><strong>Sufficient</strong> — E-Coli ≤900, Enterococci ≤330 cfu/100ml (90th percentile)</span></div>
+            <div class="chart-keys__key"><span class="colour colour--poor"></span><span><strong>Poor</strong> — Does not meet Sufficient standard</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section>
+      <h2>Eckington</h2>
+      <p>Sampled downstream of Eckington Bridge</p>
+      <div class="row">
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>E-Coli</h3>
+            <canvas data-ecoli data-location="Eckington"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Enterococci</h3>
+            <canvas data-enterocci data-location="Eckington"></canvas>
+          </div>
+        </div>
+        <div class="col">
+          <div class="chart dashboard-card">
+            <h3>Coliforms</h3>
+            <canvas data-coliforms data-location="Eckington"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <dialog id="export-modal">
+    <form method="dialog" class="export-modal__form">
+      <h3>Export Results as CSV</h3>
+      <p>Select what you want to export.</p>
+      <fieldset class="export-options" aria-label="Export scope">
+        <label class="export-option">
+          <input type="radio" name="export-scope" value="all" checked>
+          <span>All Eckington data</span>
+        </label>
+        <label class="export-option">
+          <input type="radio" name="export-scope" value="single">
+          <span>Single location</span>
+        </label>
+      </fieldset>
+      <div class="export-location" data-export-location-wrapper hidden>
+        <label for="export-location">Location</label>
+        <select id="export-location">
+          <option value="Eckington">Eckington</option>
+        </select>
+      </div>
+      <div class="export-modal__actions">
+        <button type="button" class="button primary" data-export-confirm>Export CSV</button>
+        <button class="button clear" value="cancel">Close</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.4.0"></script>
+  <script src="app.js?v=7"></script>
+</body>
 </html>
